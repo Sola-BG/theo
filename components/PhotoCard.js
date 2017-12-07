@@ -26,14 +26,14 @@ export default class PhotoCard extends Component {
     onOpen: PropTypes.func.isRequired,
   }
   render() {
-    const { photo, photo: { title, description, photoUrl }, onOpen } = this.props;
+    const { photo, photo: { title, photoCount, photoUrl }, onOpen } = this.props;
     return (
       <TouchableOpacity style={styles.container} onPress={() => onOpen(photo)}>
         <View style={styles.imageContainer}>
           <Image source={{ uri: photoUrl }} style={styles.image} />
         </View>
         <Text style={styles.title} numberOfLines={1}>{title}</Text>
-        <Text style={styles.description} numberOfLines={1}>{description}</Text>
+        <Text style={styles.photoCount} numberOfLines={1}>{photoCount}</Text>
       </TouchableOpacity>
     );
   }
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginTop: 4,
   },
-  description: {
+  photoCount: {
     fontFamily: 'Avenir',
     color: '#BBBBBB',
     fontSize: 12,

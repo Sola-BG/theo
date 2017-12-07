@@ -38,7 +38,7 @@ export default class PhotoScreen extends React.Component {
       <View style={globalStyles.container}>
         <View style={globalStyles.toolbar}>
             <Text style={globalStyles.toolbarButton}></Text>
-            <Text style={globalStyles.toolbarTitle}>Photos</Text>
+            <Text style={globalStyles.toolbarTitle}>Albums</Text>
             <Text style={globalStyles.toolbarButton}></Text>
         </View>
         <ScrollView

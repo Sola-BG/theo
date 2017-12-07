@@ -4,7 +4,7 @@ import { TabNavigator } from 'react-navigation';
 import HomeScreen from './components/HomeScreen';
 import PhotoScreen from './components/PhotoScreen';
 import AboutScreen from './components/AboutScreen';
-import ContactScreen from './components/ContactScreen';
+import VideoScreen from './components/VideoScreen';
 import SettingsScreen from './components/SettingsScreen';
 
 
@@ -29,14 +29,14 @@ const MyApp = TabNavigator({
   Home: {
     screen: HomeScreen,
   },
-  About: {
-    screen: AboutScreen
-  },
+  // About: {
+  //   screen: AboutScreen
+  // },
   Photos: {
     screen: PhotoScreen,
   },
-  Contact: {
-    screen: ContactScreen
+  Videos: {
+    screen: VideoScreen
   },
   Settings: {
     screen: SettingsScreen

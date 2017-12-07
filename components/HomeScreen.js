@@ -20,7 +20,8 @@ export default class HomeScreen extends React.Component {
           style={styles.backgroundImage}
         >
           <View>
-            <Text>This is about Theo</Text>
+            <Text style={styles.title}>Theo</Text>
+            <Text style={styles.title}>Oderinde</Text>
           </View>
         </Image>
     );
@@ -43,4 +44,12 @@ const styles = StyleSheet.create({
     width: 250,
     height: 450,
   },
+  title: {
+    fontSize:36,
+    color:'steelblue',
+    textAlign:'center',
+    fontWeight:'bold',
+    fontFamily:'Didot-Italic',
+    marginBottom:20
+  }
 });
